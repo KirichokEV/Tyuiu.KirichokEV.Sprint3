@@ -1,6 +1,6 @@
-﻿using Tyuiu.KirichokEV.Sprint3.Task0.V18.Lib;
+﻿using Tyuiu.KirichokEV.Sprint3.Task1.V10.Lib;
 
-namespace Tyuiu.KirichokEV.Sprint3.Task0.V18
+namespace Tyuiu.KirichokEV.Sprint3.Task1.V10
 {
     internal class Program
     {
@@ -12,21 +12,21 @@ namespace Tyuiu.KirichokEV.Sprint3.Task0.V18
 
             Console.WriteLine("*************************************************************************************");
             Console.WriteLine("* Спринт #3                                                                         *");
-            Console.WriteLine("* Тема: Оператор цикла for                                                          *");
-            Console.WriteLine("* Задание #0                                                                        *");
-            Console.WriteLine("* Вариант #18                                                                       *");
+            Console.WriteLine("* Тема: Оператор цикла while                                                        *");
+            Console.WriteLine("* Задание #1                                                                        *");
+            Console.WriteLine("* Вариант #10                                                                       *");
             Console.WriteLine("* Выполнила: Киричок Елиавета Викторовна | РППб-24-1                                *");
             Console.WriteLine("*************************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                          *");
-            Console.WriteLine("* Написать прогарммму используя цикла for, которая вычисляет произведение ряда      *");
-            Console.WriteLine("* по формуле, при Х=1                                                               *");
+            Console.WriteLine("* Написать прогарммму используя цикла while, которая вычисляет сумму ряда           *");
+            Console.WriteLine("* по формуле, при Х=5                                                               *");
             Console.WriteLine("*************************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                                  *");
             Console.WriteLine("*************************************************************************************");
 
-            int value = 1;
+            int value = 5;
             int startValue = 1;
-            int stopValue = 6;
+            int stopValue = 17;
 
             Console.WriteLine("Переменная Х = " + value);
             Console.WriteLine("Старт шага = " + startValue);
@@ -36,7 +36,7 @@ namespace Tyuiu.KirichokEV.Sprint3.Task0.V18
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                                        *");
             Console.WriteLine("*************************************************************************************");
 
-            Console.WriteLine("Произведение ряда =" + ds.GetMultiplySeries(value, startValue, stopValue));
+            Console.WriteLine("Произведение ряда =" + ds.GetSumSeries(value, startValue, stopValue));
             Console.ReadKey();
         }
     }
